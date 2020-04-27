@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "es6",
+      "moduleResolution": "node",
+      "sourceMap": true,
+      "declaration": true,
+      "removeComments": false,
+      "noImplicitAny": false,
+      "rootDir": ".",
+      "typeRoots": [
+        "./node_modules/@types"
+      ],
+      "baseUrl": "./",
+      "paths": {
+        "@components/*": ["./components/*"],
+        "@pages/*": ["./pages/*"]
+      }
+    }
+  }
