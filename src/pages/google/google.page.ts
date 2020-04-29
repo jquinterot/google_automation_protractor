@@ -31,8 +31,7 @@ export class GoogleHomePage extends BasePage {
         return await this.googleResultLabel.getText();
     }
 
-    public async getFirstSuggestionFromList(){ 
-        await browser.sleep(3000);        
+    public async getFirstSuggestionFromList(){     
         let resultArrayListText = [];
         await browser.sleep(3000);  
         const getElementsFromList = await this.recomendationGoogleList;

@@ -33,9 +33,7 @@ export class GoogleResultPage extends BasePage {
     }  
 
     public async validResultToCheck(){
-        await browser.sleep(2000);
-        await browser.executeScript('window.scrollTo(0,740);');
-        await browser.sleep(3000);        
+        await browser.executeScript('window.scrollTo(0,740);');    
         let resultArrayListText = [];
         await browser.sleep(3000);  
         const getElementsFromList = await this.resultListForSearchedText;
