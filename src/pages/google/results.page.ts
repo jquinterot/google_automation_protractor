@@ -1,5 +1,5 @@
 import { by, browser, element, protractor, promise, WebElement } from 'protractor';
-import { BasePage, baseGoogleUrl } from '../base/base-page';
+import { BasePage } from '../base/base-page';
 
 export class GoogleResultPage extends BasePage {
     private resultListForSearchedText = element.all(by.css('.LC20lb'));
@@ -21,14 +21,10 @@ export class GoogleResultPage extends BasePage {
         return resultArrayListText[0];
     }
     
-    public async getFirstLinkToClickFromList(){ 
-        await browser.sleep(3000);  
-        const getElementsFromList = await this.resultListForSearchedText;
-        await getElementsFromList[0].click();
-    }
-
     public async clickFirstResultFromList():Promise <void> {
-        await this.firstResultLink.click();
+        await browser.sleep(3000);  
+        const getFirstElementToClickFromList = await this.firstResultLink;
+        await getFirstElementToClickFromList[0].click();
     }  
 
     public async getTittleFromAccesedPage():Promise <string> {
