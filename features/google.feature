@@ -19,7 +19,7 @@ Feature:    Google Homepage Search
     When I click on the first result link
     Then I go to the "Patrick Rothfuss - The Books" page
 
-   Scenario: User can search with “Google Search”
+   Scenario: User can search with “Google Search” happy path
    Happy Path (Not required)
     Given I’m on the homepage
     When I type "The name of the wind" into the search field

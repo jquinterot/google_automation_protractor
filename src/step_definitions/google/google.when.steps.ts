@@ -23,12 +23,12 @@ When('I click on the first result link', async function clickOnFirstResult() {
 
 When('the suggestions list is displayed', async function isSuggestionsListDisplayed() {
     const googleHomePage = new GoogleHomePage();
-    const recomendationsList = await googleHomePage.getSuggestionsList();
+    const recomendationsList = await googleHomePage.getFirstSuggestionFromList();
     expect(recomendationsList).to.not.be.null;
     
 });
 
-When('I click on the first suggestion in the list', async function clickonTheFirstSuggestion() {
+When('I click on the first suggestion in the list', async function clickOnTheFirstSuggestion() {
     const googleHomePage = new GoogleHomePage();
     await googleHomePage.selectFirstSuggestion();
 });

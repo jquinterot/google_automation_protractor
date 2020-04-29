@@ -10,5 +10,4 @@ export class BasePage {
         selector.click();
         selector.sendKeys(text);
     }
-
 }

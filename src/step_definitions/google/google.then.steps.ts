@@ -3,8 +3,6 @@ import { GoogleHomePage } from '../../pages';
 import { GoogleResultPage } from '../../pages';
 import * as chai from 'chai';
 
-let assert = chai.assert;
-let should = chai.should();
 let expect = chai.expect;
 
 Then('I go to the search results page', async function goToGoogleResult() {
