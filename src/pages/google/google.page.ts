@@ -8,7 +8,8 @@ export class GoogleHomePage extends BasePage {
     private googleSearchButton = element(by.css('.FPdoLc.tfB0Bf input.gNO89b'));
     private googleResultLabel = element(by.css('input.gLFyf.gsfi'));
     private recomendationGoogleList = element.all(by.css('ul > li.sbct .sbl1'));
-    private firstSuggestion = element.all(by.css('li .sbtc .sbl1 span'));     
+    private firstSuggestion = element.all(by.css('li .sbtc .sbl1 span'));
+    private example = 'example';     
 
     public async getGoogleLabel(textToSearch: string){
         const basePage = new BasePage();
